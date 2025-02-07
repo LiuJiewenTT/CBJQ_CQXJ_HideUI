@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "尘白 猜拳卸甲 隐藏UI",
+    "version": "1.0",
+    "icons": {
+        "16": "res/icons/icon.png",
+        "48": "res/icons/icon.png",
+        "128": "res/icons/icon.png"
+    },
+    "description": "",
+    "permissions": [
+        "activeTab"
+    ],
+    "host_permissions": [
+        "https://www.cbjq.com/cqxj/index.html"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "res/icons/icon.png",
+            "48": "res/icons/icon.png",
+            "128": "res/icons/icon.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.cbjq.com/cqxj/index.html"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
